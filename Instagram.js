@@ -146,6 +146,7 @@ export default class Instagram extends Component {
         key={key}
         style={[styles.webView, this.props.styles.webView]}
         source={{ uri: ig_uri }}
+        originWhitelist={["file://"]}
         startInLoadingState
         onNavigationStateChange={this.onNavigationStateChange.bind(this)}
         onError={this.onNavigationStateChange.bind(this)}
